@@ -5,6 +5,7 @@ from macgyver.constants import SPRITE_WIDTH, SPRITE_HEIGHT
 
 class LabyrinthDisplay(pygame.Surface):
     """Draw the walls of the labyrinth and load the wall images."""
+
     def __init__(self, labyrinth):
         self.labyrinth = labyrinth
         super().__init__((self.labyrinth.width * SPRITE_WIDTH, self.labyrinth.height * SPRITE_HEIGHT))
